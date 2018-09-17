@@ -5,6 +5,9 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
+- Remove text unused in index.html
+  [AuroreMariscal]
+
 - Change height for Richtext ppi and ppi-e
   [AuroreMariscal]
 
