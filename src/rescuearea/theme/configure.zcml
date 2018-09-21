@@ -18,9 +18,9 @@
       />
 
   <plone:static
-      directory="theme/less"
+      directory="theme"
       type="plone"
-      name="rescuearea.theme.less"
+      name="rescuearea-theme"
       />
 
   <genericsetup:registerProfile

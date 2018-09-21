@@ -7,4 +7,42 @@
             height: 16rem !important;
         }
     }
+    .display-fieldset{
+        .tabs-fieldset {
+            position: sticky;
+            top: 0;
+            display: flex;
+            background-color: @color-light;
+        }
+        .tab-fieldset {
+            padding: 0.5rem;
+            border: 2px solid @color-default;
+            background-color: @color-light;
+            flex: 1;
+            border-top-left-radius: @border-radius;
+            border-top-right-radius: @border-radius;
+        }
+        .tab-fieldset.active,
+        .tab-fieldset:first-child{
+            background-color: @color-default;
+            color: @color-light;
+        }
+        .tab-fieldset.desactived{
+            background-color: @color-light;
+            color: @color-dark;
+        }
+        .contents-fieldset{
+            border: 2px solid @color-default;
+            border-top: none;
+            border-bottom-left-radius: @border-radius;
+            border-bottom-right-radius: @border-radius;
+            padding: 1rem;
+            .content-fieldset{
+                display: none;
+            }
+            .content-fieldset:first-child{
+                display: block;
+            }
+        }
+    }
 }
