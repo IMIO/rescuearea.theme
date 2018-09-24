@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a2 (unreleased)
+1.0a2 (2018-09-24)
 ------------------
 
 - Add a menu for PPI & PPIe
