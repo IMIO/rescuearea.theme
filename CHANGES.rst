@@ -5,6 +5,9 @@ Changelog
 1.0a2 (unreleased)
 ------------------
 
+- Add a menu for PPI & PPIe
+  [AuroreMariscal, mpeeters]
+
 - Add style to print ppie view
   [AuroreMariscal]
 
