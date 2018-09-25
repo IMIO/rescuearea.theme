@@ -5,7 +5,11 @@ Changelog
 1.0a3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add glyphicon info
+  [AuroreMariscal]
+
+- Add compile style
+  [AuroreMariscal]
 
 
 1.0a2 (2018-09-24)
