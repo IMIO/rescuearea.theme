@@ -10,6 +10,7 @@
         text-align: left;
         padding: 1rem 0 0 0;
         margin: 0;
+        position: relative;
     }
     form{
         iframe {
@@ -23,6 +24,7 @@
             display: flex;
             flex-wrap: wrap;
             background-color: @color-light;
+            z-index: 1;
             @media (max-width: 992px) {
                 &{
                     flex-direction: column;
@@ -47,7 +49,7 @@
         .tab-fieldset:first-child{
             background-color: @color-default;
             color: @color-light;
-            border-left: 1px solid @color-default;
+            border-top: 1px solid @color-default;
         }
         .tab-fieldset.desactived{
             background-color: @color-light;
@@ -70,20 +72,49 @@
         content: "\e085";
         cursor: help;
     }
-    .tooltip-inner {
-        max-width: 60%;
-        color: @tooltip-color;
-        text-align: left;
-        @media (max-width: 480px) {
-            &{
-                max-width: 100%;
-            }
+    span.info:hover::after{
+        top: 0;
+        margin-left: -2px;
+        border-width: 5px 5px 0;
+        border-color: transparent;
+        border-top-color: #000;
+        border-style: solid;
+        transform: translate(-100%, 200%);;
+        content: "";
+        position: absolute;
+    }
+    .tooltip.mockup-tooltip{
+        top: 0 !important;
+        left: auto !important;
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100%;
+        max-width: 100%;
+        .tooltip-arrow{
+            display: none;
         }
-
+        .tooltip-inner{
+            position: absolute;
+            bottom: -1rem;
+            margin-bottom: 0;
+            width: auto;
+            max-width: none;
+            text-align: left;
+        }
     }
     &.template-print{
         .required{
             display: none;
+        }
+    }
+    @media (max-width: 768px) {
+        .col-xs-12.col-sm-12{
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .display-fieldset .tabs-fieldset {
+            position: relative;
         }
     }
 }
