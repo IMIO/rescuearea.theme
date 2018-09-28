@@ -21,3 +21,11 @@ label,
     margin-left: 0;
     margin-right: 0;
 }
+#main-container{
+    & > .col-xs-12{
+        padding: 0;
+        & > .row > .col-xs-12{
+            padding: 0;
+        }
+    }
+}
