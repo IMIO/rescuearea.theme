@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a3 (unreleased)
+1.0a3 (2018-09-30)
 ------------------
 
 - Add glyphicon info
