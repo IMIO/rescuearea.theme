@@ -2,126 +2,138 @@
 .portaltype-ppi,
 .template-ppi_e,
 .portaltype-ppi_e{
-    legend{
-        margin: 3rem 0 0.5rem 0;
-    }
-    label, .label{
-        display: block;
-        text-align: left;
-        padding: 1rem 0 0 0;
-        margin: 0;
-        position: relative;
-    }
-    form{
-        iframe {
-            height: 16rem !important;
+    #content-core{
+        legend{
+            margin: 3rem 0 0.5rem 0;
         }
-    }
-    .display-fieldset{
-        .tabs-fieldset {
-            position: sticky;
-            top: 0;
-            display: flex;
-            flex-wrap: wrap;
-            background-color: @color-light;
-            z-index: 1;
-            @media (max-width: 992px) {
-                &{
-                    flex-direction: column;
-                }
-            }
-        }
-        .tab-fieldset {
-            padding: 0.5rem;
-            border: 1px solid @color-default;
-            background-color: @color-light;
-            flex: 1;
-            cursor: pointer;
-            @media (max-width: 992px) {
-                &{
-                    border-top: 0px;
-                    border-left: 1px solid @color-default;
-                }
-            }
-        }
-        .tab-fieldset.active,
-        .tab-fieldset:first-child{
-            background-color: @color-default;
-            color: @color-light;
-            border-top: 1px solid @color-default;
-        }
-        .tab-fieldset.desactived{
-            background-color: @color-light;
-            color: @color-dark;
+        label, .label{
+            display: inline-block;
+            text-align: left;
+            padding: 0;
+            margin: 0;
+            position: relative;
         }
         .contents-fieldset{
-            border: 1px solid @color-default;
-            border-top: none;
-            padding: 1rem;
-            .content-fieldset{
+            label{
+                display: block;
+                padding: 1rem 0 0 0;
+            }
+        }
+        form{
+            iframe {
+                height: 16rem !important;
+            }
+        }
+        .display-fieldset{
+            .tabs-fieldset {
+                position: sticky;
+                top: 0;
+                display: flex;
+                flex-wrap: wrap;
+                background-color: @color-light;
+                z-index: 1;
+                @media (max-width: 992px) {
+                    &{
+                        flex-direction: column;
+                    }
+                }
+            }
+            .tab-fieldset {
+                padding: 0.5rem;
+                border: 1px solid @color-default;
+                background-color: @color-light;
+                flex: 1;
+                cursor: pointer;
+                border-right: 0;
+                @media (max-width: 992px) {
+                    &{
+                        border-right: 1px solid @color-default;
+                        border-bottom: 0;
+                    }
+                }
+            }
+            .tab-fieldset.active,
+            .tab-fieldset:first-child{
+                background-color: @color-default;
+                color: @color-light;
+            }
+            .tab-fieldset:last-child{
+                border-right: 1px solid @color-default;
+                border-bottom: 1px solid @color-default;
+            }
+            .tab-fieldset.desactived{
+                background-color: @color-light;
+                color: @color-dark;
+            }
+            .contents-fieldset{
+                border: 1px solid @color-default;
+                border-top: none;
+                padding: 1rem;
+                .content-fieldset{
+                    display: none;
+                }
+                .content-fieldset:first-child{
+                    display: block;
+                }
+            }
+        }
+        span.info::before{
+            &:extend(.glyphicon);
+            content: "\e085";
+            cursor: help;
+        }
+        span.info:hover::after{
+            top: 0;
+            margin-left: -2px;
+            border-width: 5px 5px 0;
+            border-color: transparent;
+            border-top-color: #000;
+            border-style: solid;
+            transform: translate(-100%, 200%);;
+            content: "";
+            position: absolute;
+        }
+        .tooltip.mockup-tooltip{
+            top: 0 !important;
+            left: auto !important;
+            display: block !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100%;
+            max-width: 100%;
+            .tooltip-arrow{
                 display: none;
             }
-            .content-fieldset:first-child{
-                display: block;
+            .tooltip-inner{
+                position: absolute;
+                bottom: -1rem;
+                margin-bottom: 0;
+                width: auto;
+                max-width: none;
+                text-align: left;
             }
         }
-    }
-    span.info::before{
-        &:extend(.glyphicon);
-        content: "\e085";
-        cursor: help;
-    }
-    span.info:hover::after{
-        top: 0;
-        margin-left: -2px;
-        border-width: 5px 5px 0;
-        border-color: transparent;
-        border-top-color: #000;
-        border-style: solid;
-        transform: translate(-100%, 200%);;
-        content: "";
-        position: absolute;
-    }
-    .tooltip.mockup-tooltip{
-        top: 0 !important;
-        left: auto !important;
-        display: block !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 100%;
-        max-width: 100%;
-        .tooltip-arrow{
-            display: none;
-        }
-        .tooltip-inner{
-            position: absolute;
-            bottom: -1rem;
-            margin-bottom: 0;
-            width: auto;
-            max-width: none;
-            text-align: left;
-        }
-    }
-    &.template-print{
-        .required{
-            display: none;
-        }
-    }
-    .print-ppie{
-        button{
-            margin-top: 1rem;
-            .glyphicon-print{
-                margin-left: 0.5rem;
+        &.template-print{
+            .required{
+                display: none;
             }
         }
-    }
-    @media (max-width: 768px) {
-        .col-xs-12.col-sm-12{
-            padding-left: 0;
-            padding-right: 0;
+        .print-ppie{
+            button{
+                margin-top: 1rem;
+                .glyphicon-print{
+                    margin-left: 0.5rem;
+                }
+            }
         }
-        .display-fieldset .tabs-fieldset {
-            position: relative;
+        @media (max-width: 768px) {
+            .col-xs-12.col-sm-12{
+                padding-left: 0;
+                padding-right: 0;
+            }
+            .display-fieldset .tabs-fieldset {
+                position: relative;
+            }
         }
     }
 }
