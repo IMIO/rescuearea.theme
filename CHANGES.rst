@@ -5,7 +5,8 @@ Changelog
 1.0a4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix style
+  [AuroreMariscal]
 
 
 1.0a3 (2018-09-30)
