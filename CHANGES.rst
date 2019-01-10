@@ -5,7 +5,8 @@ Changelog
 1.0a5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add style to select 2
+  [AuroreMariscal]
 
 
 1.0a4 (2018-11-23)
