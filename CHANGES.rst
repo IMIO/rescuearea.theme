@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0a5 (unreleased)
+1.0b1 (2019-01-21)
 ------------------
 
 - Add style to select 2
