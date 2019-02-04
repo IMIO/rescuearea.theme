@@ -11,4 +11,5 @@ $(document).ready(function() {
         $(".content-fieldset").hide();
         $("#" + id).show();
     });
+    $("#searchbox_currentfolder_only").attr("checked", true);
 });

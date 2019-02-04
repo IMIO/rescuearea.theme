@@ -5,7 +5,8 @@ Changelog
 1.0b2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Check searchbox_currentfolder_only with js
+  [AuroreMariscal]
 
 
 1.0b1 (2019-01-21)
