@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0b2 (unreleased)
+1.0b2 (2019-02-18)
 ------------------
 
 - Check searchbox_currentfolder_only with js
