@@ -5,7 +5,8 @@ Changelog
 1.0b3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add style for faceted
+  [AuroreMariscal]
 
 
 1.0b2 (2019-02-18)
