@@ -2,7 +2,13 @@ Changelog
 =========
 
 
-1.0b3 (unreleased)
+1.0b4 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
+1.0b3 (2019-06-19)
 ------------------
 
 - Add style for faceted
