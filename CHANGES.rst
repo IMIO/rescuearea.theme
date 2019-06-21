@@ -5,7 +5,8 @@ Changelog
 1.0b4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix release
+  [mpeeters]
 
 
 1.0b3 (2019-06-19)
